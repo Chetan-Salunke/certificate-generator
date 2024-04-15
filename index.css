@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+}
+
+#img {
+    display: flex;
+}
+
+#img1 {
+    object-fit: contain;
+    height: 650px;
+}
+
+/* #container {
+    text-align: center;
+    padding: 20px;
+} */
+/* #certificate {
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    border: 2px solid #000;
+    position: relative;
+    margin: 0 auto;
+} */
+#photo {
+    border-radius: 50%;
+    position: absolute;
+    top: 185px;
+    left: 374px;
+    height: 243px;
+    width: 243px;
+}
+
+#captureBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#downloadBtn {
+    /* display: none; */
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    padding: 10%;
+    padding-top: 250px;
+}
+.buttons{
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        display: block;
+    }
+    .btn{
+        padding: 30%;
+        /* padding-left: 30px; */
+    }
+  }
