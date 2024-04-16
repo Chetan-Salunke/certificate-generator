@@ -26,6 +26,9 @@ const video = document.createElement('video');
             video.style.display = 'none';
         });
         downloadBtn.addEventListener('click', function () {
+            // Hide buttons before downloading
+            captureBtn.style.display = 'none';
+            downloadBtn.style.display = 'none';
             // Take screenshot of the entire webpage
             html2canvas(document.body).then(function (canvas) {
                 // Convert canvas to image
@@ -36,5 +39,7 @@ const video = document.createElement('video');
                 link.download = 'screenshot.png';
                 // Trigger the download
                 link.click();
+                captureBtn.style.display = 'block';
+                downloadBtn.style.display = 'block';
             });
         });
